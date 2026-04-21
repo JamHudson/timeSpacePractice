@@ -129,9 +129,6 @@ public class Practice {
    * @return the integer that shows up most commonly
    */
   public static int mostCommonTimeEfficient(int[] nums) {
-    // TODO: Complete this method with an implementation that runs
-    // in O(n) time. n = nums.length
-
     Map<Integer,Integer> frequency = new HashMap<>();
 
     int mostCommon = 0;
