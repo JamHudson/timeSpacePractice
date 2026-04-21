@@ -157,15 +157,29 @@ public class Practice {
    * 
    * Once you finish, WRITE TESTS FOR IT in PracticeTest.java
    * 
-   * Time Complexity: 
-   * Space Complexity: 
+   * Time Complexity: O(n^2) n = nums.length
+   * Space Complexity: O(1)
    * 
    * @param nums An array of integers
    * @return the integer that shows up most commonly
    */
   public static int mostCommonSpaceEfficient(int[] nums) {
-    // TODO: Complete this method with an implementation that runs
-    // in O(1) space.
-    return -1;
+    int highest = 0;
+    int number = nums[0];
+    
+    for(int num : nums){
+      int counter = 0;
+      for(int num2 : nums){
+        if(num == num2){
+          counter++;
+        }
+      }
+      if(counter > highest){
+        highest = counter;
+        number = num;
+      }
+    }
+
+    return number;
   }
 }
