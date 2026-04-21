@@ -54,8 +54,8 @@ public class Practice {
     return evens;
   }
 
-  // Time Complexity:
-  // Space Complexity:
+  // Time Complexity: O(nm) n = amount of entries in map, m = average size of map lists
+  // Space Complexity: O(n) n = amount of entries in map
   // Remember to define your variables!
   public static List<Integer> concatVals(Map<Integer, List<Integer>> map) {
     List<Integer> result = new ArrayList<>();
