@@ -4,6 +4,24 @@ import static org.junit.jupiter.api.Assertions.*;
 public class PracticeTest {
 
   @Test
+  void testMostCommonTimeEfficient(){
+    int[] array = {7, 42, 7, 13, 99, 42, 7, 55, 13, 7, 28, 99, 42, 7};
+
+    int actual = Practice.mostCommonTimeEfficient(array);
+
+    assertEquals(99,actual);
+  }
+
+  @Test
+  void testMostCommonTimeEfficientWithRandomNumbers(){
+    int[] array = {-3, 12, -3, 7, -8, 42, -3, 15, 7, -3, -8, 12, -3, 7, 21, -5};
+
+    int actual = Practice.mostCommonTimeEfficient(array);
+
+    assertEquals(-3,actual);
+  }
+
+  @Test
   void testMostCommonTimeEfficientWithNullArray(){
     int[] array = {};
 
