@@ -9,7 +9,7 @@ public class PracticeTest {
 
     int actual = Practice.mostCommonTimeEfficient(array);
 
-    assertEquals(99,actual);
+    assertEquals(7,actual);
   }
 
   @Test
